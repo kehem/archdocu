@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scaler=1.0">
+    <title>Architecture In Documents</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="lightbox.min.css">
+    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+
+
+
+  </head>
+ <body>
+
+
+    
+    <!--nav-->
+ <header>
+    <a href="#" class="logo"><img src="image/logo.png"></a>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="index.html">ABOUT</a>
+        <a href="index.html">PROJECTS</a>
+        <a href="index.html">TEAM</a>
+        <a href="index.html">CONTACT</a>
+
+    </nav>
+
+</header>
+<!--nav-->
+  
+
+<!--Project-->
+    <div class="wrapper">
+        <h1>Project</h1>
+        <p>Details</p>
+        <div class="gallery">
+            <div class="gallery__item gallery__item--1">
+                <a href="Image/I1.png" class="gallery__link" data-lightbox="mygallery">
+                    <img src="Image/I1.png" class="gallery__image" />
+                    <div class="gallery__overlay">
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item--2">
+                <a href="Image/I2.png" class="gallery__link" data-lightbox="mygallery">
+                    <img src="Image/I2.png" class="gallery__image" />
+                    <div class="gallery__overlay">
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item--3">
+                <a href="Image/I4.jpg" class="gallery__link" data-lightbox="mygallery">
+                    <img src="Image/I4.jpg" class="gallery__image" />
+                    <div class="gallery__overlay">
+    
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item--4">
+                <a href="Image/13.jpg" class="gallery__link" data-lightbox="mygallery">
+                    <img src="Image/13.jpg" class="gallery__image" />
+                    <div class="gallery__overlay">
+                        <span>Buck in the wild</span>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+
+    </div>
+<!--Project-->
+
+
+<!--footer -->
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/profile.php?id=61557515447639"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="#home">Home</a></li>
+                <li><a href="#stepcontainer">About Us</a></li>
+                <li><a href="#vendor">Projects</a></li>
+                <li><a href="#container">Contact Us</a></li>
+                <li><a href="#Team">Our Team</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer">Architecture In Documents-AID</span></p>
+    </div>
+</footer>
+
+<!--end footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--script-->
+<script type="text/javascript">
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+
+    menu.addEventListener('click', () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('nav-toggle');
+    });
+
+    window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('nav-toggle');
+    }
+
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const categories = document.querySelectorAll(".category");
+    const photos = document.querySelectorAll(".photo");
+
+    categories.forEach(category => {
+        category.addEventListener("click", function () {
+            const filter = this.getAttribute("data-filter");
+
+            photos.forEach(photo => {
+                if (filter === "all") {
+                    photo.classList.remove("hide");
+                } else if (photo.classList.contains(filter)) {
+                    photo.classList.remove("hide");
+                } else {
+                    photo.classList.add("hide");
+                }
+            });
+        });
+    });
+});
+
+const myslide = document.querySelectorAll('.myslide'),
+      dot = document.querySelectorAll('.dot');
+let counter = 1;
+slidefun(counter);
+
+let timer = setInterval(autoSlide, 8000);
+function autoSlide() {
+    counter += 1;
+    slidefun(counter);
+}
+function plusSlides(n) {
+    counter += n;
+    slidefun(counter);
+    resetTimer();
+}
+function currentSlide(n) {
+    counter = n;
+    slidefun(counter);
+    resetTimer();
+}
+function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(autoSlide, 8000);
+}
+
+function slidefun(n) {
+    
+    let i;
+    for(i = 0;i<myslide.length;i++){
+        myslide[i].style.display = "none";
+    }
+    for(i = 0;i<dot.length;i++) {
+        dot[i].className = dot[i].className.replace(' active', '');
+    }
+    if(n > myslide.length){
+       counter = 1;
+       }
+    if(n < 1){
+       counter = myslide.length;
+       }
+    myslide[counter - 1].style.display = "block";
+    dot[counter - 1].className += " active";
+}
+
+
+
+</script>
+
+
+<!--end-script-->
+
+
+
+ </body>
+ </html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scaler=1.0" />
+    <title>Architecture In Documents</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--nav-->
+    <header>
+      <a href="#home" class="logo"><img src="image/logo.png" /></a>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about-section">ABOUT</a>
+        <a href="#gallery">PROJECTS</a>
+        <a href="#Team">TEAM</a>
+        <a href="#container">CONTACT</a>
+      </nav>
+    </header>
+    <!--nav-->
+
+    <!--home-->
+
+    <div class="home" id="home">
+      <div class="slider">
+        <!-- fade css -->
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Architecture In Documents<br /></h1>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>
+              "The key to architectural photography is knowing how to read a
+              building."
+            </h1>
+            <p>Julius Shulman</p>
+          </div>
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>
+              "The camera is a remarkable instrument. Saturate yourself with
+              your subject, and the camera will all but take you by the hand and
+              point the way."
+            </h1>
+            <p><br /></p>
+          </div>
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>
+              "Architectural photography is a discipline that requires an
+              understanding of design and the ability to interpret it in a
+              visual language."
+            </h1>
+            <p><br /></p>
+          </div>
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>
+              "Photography is an important part of understanding architecture."
+            </h1>
+            <p><br /></p>
+          </div>
+        </div>
+        <!-- /fade css -->
+
+        <!-- onclick js -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dotsbox" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <!-- /onclick js -->
+      </div>
+    </div>
+
+    <!--home-->
+    <!--About-->
+    <div class="about-section" id="about-section">
+      <div class="heading">
+        <h1>About</h1>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="containe">
+        <input type="radio" style="display:none;" name="slide" id="c1" checked />
+        <label for="c1" class="card">
+          <div class="row">
+            <div class="icon">1</div>
+            <div class="description">
+              <h2>Photography</h2>
+              <p>Interior,Exterior</p>
+            </div>
+          </div>
+        </label>
+        <input type="radio" style="display:none;" name="slide" id="c2" />
+        <label for="c2" class="card">
+          <div class="row">
+            <div class="icon">2</div>
+            <div class="description">
+              <h2>Cinematography</h2>
+              <p>Interior,Exterior</p>
+            </div>
+          </div>
+        </label>
+        <input type="radio" style="display:none;" name="slide" id="c3" />
+        <label for="c3" class="card">
+          <div class="row">
+            <div class="icon">3</div>
+            <div class="description">
+              <h2>Portfolio Website</h2>
+              <p>Interior,Exterior</p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+    <!--About-->
+
+    <!--Project-->
+
+    <div class="photo-gallery" id="photo-gallery">
+      <section id="gallery" class="gallery">
+        <div class="heading">
+          <h1>Projects</h1>
+          <div class="categories">
+            <button class="category" data-filter="all">All Photos</button>
+            <button class="category" data-filter="interior">Interior</button>
+            <button class="category" data-filter="exterior">Exterior</button>
+          </div>
+          <div class="photos">
+            <div class="photo interior">
+              <img src="Image/13.jpg" alt="Interior Photo" />
+              <div class="pg">
+                <a href="projectO.html">OFFICE</a>
+              </div>
+            </div>
+
+            <div class="photo exterior">
+              <img src="Image/B1.jpg" alt="Exterior Photo" />
+              <div class="pg">
+                <a href="project2.html">Begum Bari</a>
+              </div>
+            </div>
+
+            <div class="photo interior">
+              <img src="Image/3.jpg" alt="Interior Photo" />
+              <div class="pg">
+                <a href="project1.html">khulna</a>
+              </div>
+            </div>
+
+            <div class="photo exterior">
+              <img src="Image/4.jpg" alt="Exterior Photo" />
+              <div class="pg">
+                <a href="project1.html">khulna</a>
+              </div>
+            </div>
+
+            <div class="photo exterior">
+              <img src="Image/5.jpg" alt="Exterior Photo" />
+              <div class="pg">
+                <a href="project1.html">khulna</a>
+              </div>
+            </div>
+            <!-- Add more photos here with appropriate categories -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Project-->
+
+    <!-- team-->
+    <section class="Team" id="Team">
+      <h3>Our Team</h3>
+      <div class="home-container">
+        <div class="profile-card">
+          <div class="img">
+            <img src="Image/Ts.jpg" />
+          </div>
+          <div class="caption">
+            <h3>KAZI AKEQUR RAHAMAN</h3>
+            <p>Mechanical Engineer(diploma)Editor and Designer</p>
+            <div class="social-links">
+              <a
+                class="fa-brands fa-facebook"
+                href="https://www.facebook.com/kazia.rshuvo"
+              ></a>
+              <a
+                class="fa-brands fa-instagram"
+                href="https://www.instagram.com/shuvo__rahaman/"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="img">
+            <img src="Image/Tuu.jpg" />
+          </div>
+
+          <div class="caption">
+            <h3>UZZAL SINGHA</h3>
+            <p>Architect,Freelance Photographer</p>
+            <div class="social-links">
+              <a
+                class="fa-brands fa-facebook"
+                href="https://www.facebook.com/arch.uzzal"
+              ></a>
+
+              <a
+                class="fa-brands fa-flickr"
+                href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fbrightlion%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR2B560dbbvtJMveTAV580ym4vVcPcfRsVPreShQRLfB4l2DkyBbsT9q6r8_aem_AYjCARBwWo1mLf7iXuPVA42Rj-7kQ7VLMTwj7uz3K4e03f0RDh5X_tHD1dNZrIsTwhadPCkOniP2SYU7MmIVIYOY&h=AT3iyigphux6TDdxequt5M-xC5bqDtP_2UkX2T-hePUrqpzrLGpMeU62VbmBQFUabDbnrZ-JSt0E2PIIwuZn3U65u9K5sPvWKAM9Ux4YRFUgT1RJ91fXx366D4aUJhOkL55xug"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="img">
+            <img src="Image/Ta.jpg" />
+          </div>
+
+          <div class="caption">
+            <h3>ABHISEKH SINGHA</h3>
+            <p>Civil Engineer,Film maker</p>
+            <div class="social-links">
+              <a
+                class="fa-brands fa-facebook"
+                href="https://www.facebook.com/abhishek.singha.94"
+              ></a>
+              <a
+                class="fa-brands fa-instagram"
+                href="https://www.instagram.com/abhishek2in/"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--team-->
+
+    <!-- contact -->
+    <div class="container" id="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text"></p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>
+                10A, Level-10, Haque Chamber 89/2,West Panthapath,Dhaka-1215
+              </p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="iconG" alt="" />
+              <p>archdocu@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="iconG" alt="" />
+              <p>+88 01717 847 310</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=61557515447639">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--end contact -->
+
+    <!--footer -->
+    <footer>
+      <div class="footerContainer" id="">
+        <div class="socialIcons">
+          <a href="https://www.facebook.com/profile.php?id=61557515447639"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-section">About Us</a></li>
+            <li><a href="#gallery">Projects</a></li>
+            <li><a href="#container">Contact Us</a></li>
+            <li><a href="#Team">Our Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>
+          Copyright &copy;2024; Designed by
+          <span class="designer">Architecture In Documents-AID</span>
+        </p>
+      </div>
+    </footer>
+
+    <!--end footer -->
+
+    <!--script-->
+    <script type="text/javascript">
+      let menu = document.querySelector("#menu-bar");
+      let navbar = document.querySelector(".navbar");
+
+      menu.addEventListener("click", () => {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("nav-toggle");
+      });
+
+      window.onscroll = () => {
+        menu.classList.remove("fa-times");
+        navbar.classList.remove("nav-toggle");
+      };
+
+      const inputs = document.querySelectorAll(".input");
+
+      function focusFunc() {
+        let parent = this.parentNode;
+        parent.classList.add("focus");
+      }
+
+      function blurFunc() {
+        let parent = this.parentNode;
+        if (this.value == "") {
+          parent.classList.remove("focus");
+        }
+      }
+
+      inputs.forEach((input) => {
+        input.addEventListener("focus", focusFunc);
+        input.addEventListener("blur", blurFunc);
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const categories = document.querySelectorAll(".category");
+        const photos = document.querySelectorAll(".photo");
+
+        categories.forEach((category) => {
+          category.addEventListener("click", function () {
+            const filter = this.getAttribute("data-filter");
+
+            photos.forEach((photo) => {
+              if (filter === "all") {
+                photo.classList.remove("hide");
+              } else if (photo.classList.contains(filter)) {
+                photo.classList.remove("hide");
+              } else {
+                photo.classList.add("hide");
+              }
+            });
+          });
+        });
+      });
+
+      const myslide = document.querySelectorAll(".myslide"),
+        dot = document.querySelectorAll(".dot");
+      let counter = 1;
+      slidefun(counter);
+
+      let timer = setInterval(autoSlide, 8000);
+      function autoSlide() {
+        counter += 1;
+        slidefun(counter);
+      }
+      function plusSlides(n) {
+        counter += n;
+        slidefun(counter);
+        resetTimer();
+      }
+      function currentSlide(n) {
+        counter = n;
+        slidefun(counter);
+        resetTimer();
+      }
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(autoSlide, 8000);
+      }
+
+      function slidefun(n) {
+        let i;
+        for (i = 0; i < myslide.length; i++) {
+          myslide[i].style.display = "none";
+        }
+        for (i = 0; i < dot.length; i++) {
+          dot[i].className = dot[i].className.replace(" active", "");
+        }
+        if (n > myslide.length) {
+          counter = 1;
+        }
+        if (n < 1) {
+          counter = myslide.length;
+        }
+        myslide[counter - 1].style.display = "block";
+        dot[counter - 1].className += " active";
+      }
+    </script>
+
+    <!--end-script-->
+  </body>
+</html>
